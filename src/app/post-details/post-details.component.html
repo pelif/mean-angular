@@ -1,0 +1,10 @@
+<section class="row">
+  <div class="col-xs12 col-md-12 col-sm-12 col-lg-12 post-details mt-2">
+    <div class="card">
+      <div class="card-header">
+        <a [routerLink]="['/post/', post.slug]">{{ post.title }}</a>  
+      </div>
+      <div class="card-body">{{ post.body }}</div>
+    </div>
+  </div>
+</section>

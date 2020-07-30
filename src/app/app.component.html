@@ -1,20 +1,3 @@
 <app-layout>
-  <div class="card">
-    <div class="card-header">New POST</div>
-    <div class="card-body">
-      <form [formGroup]="form" (ngSubmit)="create($event)">
-        <div class="form-group">
-          <label for="title"></label>
-          <input formControlName="title" type="text" name="title" id="title" class="form-control" placeholder="A title to Post">
-        </div>
-        <div class="form-group">
-          <label for="body"></label>
-          <textarea formControlName="body" rows="3" name="body" id="body" class="form-control" placeholder="A text to body post"></textarea>
-        </div>
-        <div class="form-group">
-          <button type="subtmit" class="btn btn-primary">Save</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  <router-outlet></router-outlet> 
 </app-layout>
